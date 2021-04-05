@@ -1,24 +1,31 @@
-.navbar {
-    background-color: aqua;
-    height: 50px;
-    display: flex;
-    align-items: center;
+body {
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav{
+    background-color: gray;
+    height: 30px;
+}
+
+ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+li {
+    display: inline-block;
+    background-color: red;
    
-  
-  
 
 }
 
-.button {
-    color:black;
-    font-style: bold;
-    font-family:'Franklin Gothic Medium', Arial, sans-serif;
-    margin-left: 200px;    
-
-}
-
-.middle {
-    background-image: aqua;
-    width: 30px;
-    Hei
+.Landbutton {
+    color: red;
 }

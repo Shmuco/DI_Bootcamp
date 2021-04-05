@@ -1,0 +1,33 @@
+div {
+    display: ;
+    
+}
+
+.container {
+    width: 400px;
+    height: 160px;
+    background-color: gray;
+    border-style: solid;
+    border-color: lightgray;
+    
+}
+
+.bsq {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    position: static;
+    
+}
+
+.osq {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    position: relative;
+    top: -145px;
+    left: 5px
+    
+
+
+}
