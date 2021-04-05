@@ -1,0 +1,24 @@
+.navbar {
+    background-color: aqua;
+    height: 50px;
+    display: flex;
+    align-items: center;
+   
+  
+  
+
+}
+
+.button {
+    color:black;
+    font-style: bold;
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    margin-left: 200px;    
+
+}
+
+.middle {
+    background-image: aqua;
+    width: 30px;
+    Hei
+}

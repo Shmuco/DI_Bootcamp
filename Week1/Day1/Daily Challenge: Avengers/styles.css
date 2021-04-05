@@ -1,0 +1,27 @@
+.navbar {
+    background-color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+    
+    
+
+
+}
+
+li {color:red;
+    list-style-type: none;
+    flex-direction: row;
+    display: inline-flex;
+    margin: 0px 50px 0px 50px;
+}
+
+.middle {
+    background-image: url("Background.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
