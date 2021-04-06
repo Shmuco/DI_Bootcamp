@@ -1,0 +1,51 @@
+/* as in convention */
+/*  .class can be used for all tags */
+/* #id can be used only for one tags */
+
+body {
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    
+    
+ }
+
+.flex-container{
+    
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px;
+    border-color: yellow;
+    border-style: solid;
+
+}
+
+/* .flex-container > div{
+    width: 100px;
+    height: 100px;
+    margin: 10px; */
+    
+    
+
+.box1 {
+    background-color:red;
+    width: 100%;
+    /* margin: 10%; */
+    margin: 3px;
+
+}
+
+.box2 {
+    background-color:blue;
+    width: 50%;
+    /* height: 200px; */
+    align-self: flex-end;
+
+
+    
+ 
+}
+    
+    
