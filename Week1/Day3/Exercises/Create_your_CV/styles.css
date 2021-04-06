@@ -1,0 +1,89 @@
+body {
+    background-color: #C34A36;
+    margin: 0px;
+
+}
+
+.header {
+    /* background-color: blanchedalmond; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+
+}
+
+img {
+    height: 80px;
+    margin: 10px;
+
+}
+
+.name {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.lname {
+    font-size: bold;
+}
+
+.cv {
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-size: 100%;
+    background-position: center; 
+    height: 70vh;
+}
+
+
+.cvl {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    
+    height:100%;
+    flex: 1;
+    /* padding: 30px; */
+    margin-right: 5px;
+   
+
+}
+
+.contact {
+    flex: 1
+}
+
+.edu {
+    flex: 1;
+}
+
+.cvr {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    flex: 3;
+    padding-left: 30px;
+    margin-left: 5px;
+    /* justify-content: space-between; */
+    align-content: stretch;
+
+
+}
+
+.profile{
+    flex:1;
+
+}
+
+.wrkex{
+    flex:1;
+}
