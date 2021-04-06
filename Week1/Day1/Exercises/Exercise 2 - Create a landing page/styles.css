@@ -1,31 +1,14 @@
-body {
-    background: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.navbar {
+    background-color: rgba(248,250,251,255);
+    height: 40px;
+   ;
 }
-
-nav{
-    background-color: gray;
-    height: 30px;
-}
-
-ul {
-    list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-
-}
-
-li {
+.sb {
+    color: balck;
+    font-size: 30px;
     display: inline-block;
-    background-color: red;
-   
-
 }
 
-.Landbutton {
-    color: red;
+.si {
+    display: inline-block;
 }
