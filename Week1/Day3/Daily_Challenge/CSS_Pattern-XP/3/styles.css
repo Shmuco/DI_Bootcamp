@@ -1,0 +1,45 @@
+body
+
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    
+
+}
+
+.sqr{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100px;
+}
+
+.box1 {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+.box2 {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(229,128,126,255);
+
+}
+
+.box3 {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(231,127,126,255);
+
+}
+
+.box4 {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(216,62,60,255);
+
+}

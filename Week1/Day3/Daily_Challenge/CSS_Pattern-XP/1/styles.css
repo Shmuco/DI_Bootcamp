@@ -1,0 +1,32 @@
+body
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 864px;
+    height: 864px;
+
+}
+
+.box1 {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255,113,2,255);
+    margin: 2px;
+}
+
+.box2 {
+    height: 50px;
+    width: 50px;
+    background-color: #ffb26e;
+    margin: 2px;
+
+}
+
+.box3 {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(168,74,1,255);
+    margin: 2px;
+
+}
