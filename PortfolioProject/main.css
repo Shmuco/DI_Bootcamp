@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+}
+
+.body{
+    margin-top:55px;
+    height; ;
+    width: 100vw;
+    background-color: yellow;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+
+
+}
+
+/* .container{ */
+    width: 100vw !important
+}
+.r1{
+    height: 30px !important;
+    width: 30px!important;
+}
