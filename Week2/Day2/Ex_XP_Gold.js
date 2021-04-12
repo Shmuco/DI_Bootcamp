@@ -41,14 +41,14 @@
 // If the grade is lower than 70, console.log “D”
 
 
-let grade = prompt("Whats your grade?");
-if (90<grade){alert("A");
-}
-else if (80<grade<=90) {alert("B");
-}
-else if (70<grade<80) {alert("C");
-}
-else if (grade<70 (alert("D")));
+// var grade = prompt("Whats your grade?");
+// if (90<grade){alert("A");
+// }
+// else if (grade<=90 && grade>80) {alert("B");
+// }
+// else if (grade<=80 && grade>=70) {alert("C");
+// }
+// else (alert("D"));
 
 
 
@@ -68,4 +68,11 @@ else if (grade<70 (alert("D")));
 
 
 // let verb= prompt("Enter a verb")
-// if (3<=string.lengt(verb) && verb.slice()) {}
+// console.log(verb.length)
+// if (verb.length>=3  && verb.slice((verb.length -3))!== "ing") 
+//     {alert(verb+"ing")}
+
+// else if (verb.length>=3  && verb.slice((verb.length -3))== "ing") 
+// {alert(verb+"ly")}
+
+// else {alert(verb)}
