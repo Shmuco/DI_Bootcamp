@@ -23,66 +23,66 @@
 
 // Instructions
 
-
-
-
-
-
-
-
-
-
 // 1. let people = ["Greg", "Mary", "Devon", "James"]
-// let people = ["Greg", "Mary", "Devon", "James"];
-// 2. Write code to remove “Greg” from the people array.
-// people.shift();
-// console.log(people)
-// 3. Write code to replace “James” to “Jason”.
-// 3. Write code to replace “James” to “Jason”.
-// for (x in people){
-    // if (people[x]=== "James") {
-        // people.splice(x,1,"Jason");
-    // }}
+let people = ["Greg", "Mary", "Devon", "James"];
 
-//     else continue
-// console.log(people);
+
+// 2. Write code to remove “Greg” from the people array.
+people.shift();
+console.log(people)
+
+
+// 3. Write code to replace “James” to “Jason”.
+for (x in people){
+    if (people[x]=== "James") {
+        people.splice(x,1,"Jason");
+    }
+    else continue
+}
+console.log(people);
+
 
 // 4. Write code to add your name to the end of the people array.
-// people.push(prompt("Enter your name:"))
-// console.log(people)
+people.push(prompt("Enter your name:"))
+console.log(people)
+
 
 // 5. Using a loop, iterate through the people array and console.log each person.
-// for (name in people){
-//     console.log(people[name])
-// }
+for (name in people){
+    console.log(people[name])
+}
+
 
 // 6. Using a loop, iterate through the people array and after you console.log “Jason” exit the loop
-// for (name in people){
+for (name in people){
 
-//     if (people[name]=== "Jason"){
-//         console.log(people[name]);
-//         break;
-//     }
+    if (people[name]=== "Jason"){
+        console.log(people[name]);
+        break;
+    }
     
-    // else console.log(people[name])
-// }
+    else console.log(people[name])
+    }
+
+
+
+
 // 7. Write code to make a copy of the people array using slice. 
 // The copy should NOT include “Mary” or your name.
 
-// console.log(people)
-
+// 
 // let people2 =[]
 // for (name in people){
-//     if (people[name]!== "Shmuel" && people[name]!= "Mary")
-//     people2.push(people[name])
+//     if (people[name] != "Shmuel" && people[name] != "Mary")
+//     con(people.slice((name), (name+1)))
+
 // }
-// console.log(people2)
 
-
-// let people2 =[]
-// for (name in people){
-//     if (people[name]!== "Shmuel" && people[name]!= "Mary")
-//     people.slice(people),(people.slice(people)+1)
+// let people2 = []
+// for (name of people){
+//     if (name!= "Shmuel" && name!= "Mary")
+//    people2.push(name)
+  
 // }
 // console.log(people2)
 
@@ -98,9 +98,10 @@
 // 10. Create a variable called last which value is the last element of the array.
 // Hint: What is the relationship between the index of the last element in the array and the length of the array?
 
-// var last = people[people.length - 1];
-// // console.log(people[-1])----why doesnt this work??
-// console.log(last)
+let people = ["Greg", "Mary", "Devon", "James"];
+var last = people[people.length - 1];
+//  console.log(people[-1])----why doesnt this work??
+console.log(last)
 
 
 
@@ -112,6 +113,98 @@
 // Tip : Which while loop is more relevant for this situation?
 // Hint : Check the data type you receive from the prompt (ie. typeof method)
 
-while (prompt("Enter a number")<10) {
-    continue
+// while (prompt("Enter a number")<10) {
+//     continue
+// }
+
+
+// Exercise 4 : Attendance
+let guestList = {
+    randy: "Germany",
+    karla: "France",
+    wendy: "Japan",
+    norman: "England",
+    sam: "Argentina"
+  }
+let usersName = prompt("Enter your name: ")
+    if (usersName in guestList) {
+        alert("Hi! I'm " + usersName +", and I'm from " + guestList[usersName]);
+    
+    }
+    else alert ("Hi, I'm a guest")
+  
+
+
+
+
+
+// Exercise 5 : Family
+
+// Instructions
+
+// Create an object called family with a few key value pairs.
+// Console.log the keys. (using a for loop).
+// Console.log the values. (using a for loop).
+
+// let family = {
+//     Mother: "Jane",
+//     Father: "Jack",
+//     Son: "John",
+//     Daughter: "Jill"
+// }
+
+// for (let person in family) {
+//     console.log(person);
+//     console.log(family[person]);
+
+// }
+
+
+// Exercise 6
+
+// Instructions
+
+// let details = {
+//   my: 'name',
+//   is: 'Rudolf',
+//   the: 'raindeer'
+// }
+// Given the object above, console.log “my name is Rudolf the raindeer”
+
+// let details = {
+//       my: 'name',
+//       is: 'Rudolf',
+//       the: 'raindeer'
+//     }
+// let array =[]
+
+// for (property in details ){
+//     array.push(property)
+//     array.push(details[property])
+   
+// }
+// console.log(array.join(" "))
+
+
+Exercise 7 : Secret Group
+
+Instructions
+
+// let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
+// A group of friends have decided to start a secret society. 
+// The society’s name will be the first letter of each of their names sorted in alphabetical order.
+// Hint: a string is an array of letters
+// Console.log the name of their secret society.
+
+let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
+let clubName= []
+for (i in names){
+    console.log(names[i].split(""))
+    clubName.push(names[i][0])
+   
+
+
 }
+console.log(clubName)
+clubName.sort()
+console.log(clubName.join(""))
