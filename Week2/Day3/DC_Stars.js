@@ -12,11 +12,11 @@
 // }
 
 // Nested Loop
-let star = "*"
-for (let i = 1; i <=1; i++) {
-    for (let j = 1;j<=6; j++) {
-        console.log((star.repeat(j)))
+// let star = "*"
+// for (let i = 1; i <=1; i++) {
+//     for (let j = 1;j<=6; j++) {
+//         console.log((star.repeat(j)))
 
-    }
+//     }
 
-}
+// }
