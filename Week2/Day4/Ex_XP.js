@@ -15,36 +15,36 @@
 // 3. Instead of using prompt to ask the user for their age, 
 //    have the checkDriverAge() function accept an argument age.
 
-// let usersage = (prompt("How old are you?"))
-// function agecheck(age) {
-//     if (age > 18) { 
-//         alert("You are old enough to drive, Powering On. Enjoy the ride!")       
-//     }
-//     else if (age <18 ) {alert("Sorry,you are too young to drive this car. Powering off")
-//     }
-//     else {alert("Congratulations on your first year of driving. Enjoy the ride!")}   
+let usersage = (prompt("How old are you?"))
+function agecheck(age) {
+    if (age > 18) { 
+        alert("You are old enough to drive, Powering On. Enjoy the ride!")       
+    }
+    else if (age <18 ) {alert("Sorry,you are too young to drive this car. Powering off")
+    }
+    else {alert("Congratulations on your first year of driving. Enjoy the ride!")}   
 
-// }
+}
 
-// agecheck(usersage)
+agecheck(usersage)
 
 
 
 // Exercise 2
-// let wallet = []
-// wallet.push(prompt("How many Quarters do you have?"))
-// wallet.push(prompt("How many Dimes do you have?"))
-// wallet.push(prompt("How many Nickles do you have?"))
-// wallet.push(prompt("How many Pennies do you have?"))
-// wallet.push(prompt("How much is the item?"))
+let wallet = []
+wallet.push(prompt("How many Quarters do you have?"))
+wallet.push(prompt("How many Dimes do you have?"))
+wallet.push(prompt("How many Nickles do you have?"))
+wallet.push(prompt("How many Pennies do you have?"))
+wallet.push(prompt("How much is the item?"))
 
-// console.log(wallet)
-// console.log((wallet[0]*0.25+wallet[1]*0.10+wallet[2]*0.05+wallet[3]*0.01))
+console.log(wallet)
+console.log((wallet[0]*0.25+wallet[1]*0.10+wallet[2]*0.05+wallet[3]*0.01))
 
-// if ((wallet[0]*0.25+wallet[1]*0.10+wallet[2]*0.05+wallet[3]*0.01)> wallet[4]
-// ) {alert("You have enough money")
-// }
-// else alert("You need more money")
+if ((wallet[0]*0.25+wallet[1]*0.10+wallet[2]*0.05+wallet[3]*0.01)> wallet[4]
+) {alert("You have enough money")
+}
+else alert("You need more money")
 
 
 
@@ -67,6 +67,18 @@
 // console.log("The final sum is "+ sum)
 // } 
 // mutiplies23(0)
+
+// var sum = 0
+// for (i=0; i*23<500; i++){
+//     console.log(i)
+//     console.log(i*23)
+//     sum = sum +(i*23)
+
+// }
+// console.log(sum)
+
+
+
 
 
 // Exercise 4

@@ -17,4 +17,3 @@ console.log("* "+ string[words]+" ".repeat(maxLength-string[words].length)+" *" 
 console.log(stars.repeat(maxLength+4))
 
 
-

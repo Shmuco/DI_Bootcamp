@@ -13,7 +13,7 @@
 // for (i in colors) {console.log("My #"+(parseInt(i)+1)+" fav" +" colour is "+ colors[i])}
 
 
-
+//Bonus
 // let colors = [["Red", "st"],["Yellow","nd"],["Green","rd"],["Blue","th"]]
 // for (i in colors) {console.log("My " +(parseInt(i)+1) + colors[i][1] +" favorite colour is "+ colors[i][0])};
 
@@ -71,10 +71,8 @@ for (name in people){
 // The copy should NOT include “Mary” or your name.
 
 // 
-// let people2 =[]
-// for (name in people){
-//     if (people[name] != "Shmuel" && people[name] != "Mary")
-//     con(people.slice((name), (name+1)))
+let people2 = people.slice(1,3)
+console.log(people2)
 
 // }
 
@@ -88,7 +86,7 @@ for (name in people){
 
 // 8. Write code that console.logs Mary’s index. take a look at indexOf on google.
 
-// console.log(people.indexOf('Mary'))
+console.log(people.indexOf('Mary'))
 
 // 9. Write code that gives the indexOf “Foo” (this should return -1). Why does it return -1
 // console.log(people.indexOf('Foo'))
@@ -98,7 +96,7 @@ for (name in people){
 // 10. Create a variable called last which value is the last element of the array.
 // Hint: What is the relationship between the index of the last element in the array and the length of the array?
 
-let people = ["Greg", "Mary", "Devon", "James"];
+// let people = ["Greg", "Mary", "Devon", "James"];
 var last = people[people.length - 1];
 //  console.log(people[-1])----why doesnt this work??
 console.log(last)
@@ -113,9 +111,9 @@ console.log(last)
 // Tip : Which while loop is more relevant for this situation?
 // Hint : Check the data type you receive from the prompt (ie. typeof method)
 
-// while (prompt("Enter a number")<10) {
-//     continue
-// }
+while (prompt("Enter a number")<10) {
+    continue
+}
 
 
 // Exercise 4 : Attendance
@@ -146,18 +144,18 @@ let usersName = prompt("Enter your name: ")
 // Console.log the keys. (using a for loop).
 // Console.log the values. (using a for loop).
 
-// let family = {
-//     Mother: "Jane",
-//     Father: "Jack",
-//     Son: "John",
-//     Daughter: "Jill"
-// }
+let family = {
+    Mother: "Jane",
+    Father: "Jack",
+    Son: "John",
+    Daughter: "Jill"
+}
 
-// for (let person in family) {
-//     console.log(person);
-//     console.log(family[person]);
+for (let person in family) {
+    console.log(person);
+    console.log(family[person]);
 
-// }
+}
 
 
 // Exercise 6
@@ -171,24 +169,24 @@ let usersName = prompt("Enter your name: ")
 // }
 // Given the object above, console.log “my name is Rudolf the raindeer”
 
-// let details = {
-//       my: 'name',
-//       is: 'Rudolf',
-//       the: 'raindeer'
-//     }
-// let array =[]
+let details = {
+      my: 'name',
+      is: 'Rudolf',
+      the: 'raindeer'
+    }
+let array =[]
 
-// for (property in details ){
-//     array.push(property)
-//     array.push(details[property])
+for (property in details ){
+    array.push(property)
+    array.push(details[property])
    
-// }
-// console.log(array.join(" "))
+}
+console.log(array.join(" "))
 
 
-Exercise 7 : Secret Group
+// Exercise 7 : Secret Group
 
-Instructions
+// Instructions
 
 // let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
 // A group of friends have decided to start a secret society. 
