@@ -1,0 +1,113 @@
+<!-- Excersise 1  -->
+<!-- <html>
+<body> 
+
+<table id="sampleTable" border="1"> 
+<tr id="my_tr">
+    <td >Row1 cell1</td> 
+    <td>Row1 cell2</td>
+</tr> 
+<tr>
+    <td>Row2 cell1</td> 
+    <td>Row2 cell2</td>
+</tr> 
+</table>
+<input type="button" onclick="insert_Row()" value="Insert row"> 
+<input type="button" onclick="insert_Collum()" value="Insert collum"> 
+<script src=script.js></script> 
+</body>
+</html>  -->
+
+<!-- <html>
+<body>
+    <button id="btn">Click me</button>
+    <button id="btn1">Hey Hey</button>
+
+    <script>
+        let x = document.getElementById("btn")
+        let y = document.getElementById("btn1")
+
+        y.addEventListener("mouseover", RespondMouseOver);
+
+        x.addEventListener("click", RespondMouseOver); 
+
+        function RespondMouseOver(e) { 
+            console.log("e", e) 
+            // all the properties of the event object
+            console.log("My mouse is over the btn named" + e.target.innerHTML)
+            console.log("....: ", e.type, e.target)
+            // e.type: mouseover
+            console.log("e.target: ", e.target)
+            // e.target:  <button id=​"btn1">​Hey Hey​</button>​
+        } 
+    </script>
+</body>
+</html> -->
+
+<!-- Excersise 2 -->
+<!-- <button id="jsstyle">Style</button> 
+
+<script>
+    let but = document.getElementById("jsstyle")
+    but.addEventListener ("mouseover", backgroundColor)
+    but.addEventListener ("click", grow)
+    
+    function backgroundColor (){
+        but.style.backgroundColor ="blue"
+
+    }
+    function grow (){
+        but.style.height= "200px"
+        but.style.width= "200px"
+        but.style.backgroundColor= "orange"
+
+    }
+    
+    
+    </script> -->
+
+
+    <html>
+<body>
+
+    <style>
+        div { border : 2px solid blue}
+        button { border : 2px solid red}
+    </style>
+
+    <section id="section">
+        <div id="div">
+            <button id="btn">Click me</button>
+        </div>
+    </section>
+    <script>
+       let x = document.getElementById("btn")
+       let y = document.getElementById("div")
+       let z = document.getElementById("section")
+
+       x.addEventListener("click", XRespondClick, true); 
+       y.addEventListener("click", YRespondClick, fa); 
+       z.addEventListener("click", ZRespondClick, true); 
+
+       function XRespondClick() { 
+           alert("BTN is Clicked")
+       }    
+
+       function YRespondClick() { 
+           alert("DIV is Clicked")
+       }    
+
+        function ZRespondClick() { 
+           alert("SECTION is Clicked")
+       }  
+
+        //Result if I click on the button
+        // Alert : BTN is Clicked
+        // Alert : DIV is Clicked
+        // Alert : SECTION is Clicked
+        // --> The event is triggered from the element that its clicked to the top
+
+    </script>
+
+</body>
+</html>

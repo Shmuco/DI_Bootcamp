@@ -50,6 +50,7 @@ else alert("You need more money")
 
 // Exercise 3
 
+//Doest work and not sure why 
 // function mutiplies23 (number){
 //     let i = 1
 //     let result=0
@@ -78,24 +79,37 @@ else alert("You need more money")
 // console.log(sum)
 
 
+// Works and is more concise 
+let result = 0
+function mutiplies23(){
+    for (i=1; i<500; i++){
+        if (i % 23 === 0){
+            console.log(i)
+            result = result +i
+
+        }
+        
+    }
+    console.log("Sum: "+result)
+}
 
 
 
 // Exercise 4
 
-// let amazonBasket = {
-//   glasses: 1,
-//   books: 2,
-//   floss: 100,
-// };
-// function basketCheacker(input) {
-//   if (input in amazonBasket) {
-//     alert("We have " + amazonBasket[input] + " stock");
-//   } 
-//   else alert("That item is out of stcok");
-// }
+let amazonBasket = {
+  glasses: 1,
+  books: 2,
+  floss: 100,
+};
+function basketCheacker(input) {
+  if (input in amazonBasket) {
+    alert("We have " + amazonBasket[input] + " stock");
+  } 
+  else alert("That item is out of stcok");
+}
 
-// basketCheacker(prompt("Enter an item to cheak"));
+basketCheacker(prompt("Enter an item to cheak"));
 
 
 // Exercise 5 : Shopping List
