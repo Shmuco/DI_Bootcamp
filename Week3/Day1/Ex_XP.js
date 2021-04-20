@@ -47,13 +47,20 @@ for (i=0; i<x.length; i++) {
 
 // 4 .Delete the name Sarah from the second <ul>.
 
-let x = document.querySelectorAll("ul")
-for (i=0; i<x.length; i++) {
-    let text = document.createElement("li")
-    text.innerText = "Hey Students"
-    x[i].appendChild(text)
+// let x = document.querySelectorAll("ul")
+// for (i=0; i<x.length; i++) {
+//     let text = document.createElement("li")
+//     text.innerText = "Hey Students"
+//     x[i].appendChild(text)
     
-}
+// }
+
+let ulTotal = document.getElementsByTagName('ul');
+let ul1= ulTotal[1];
+let u=document.getElementsByTagName('li')[3];
+ul1.removeChild(u)
+
+
 // 5. Bonus
 //        Add a class called student_list to both of the <ul>'s.
 //        Add the classes university and attendance to the first <ul>.
