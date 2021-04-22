@@ -1,0 +1,25 @@
+body{
+    background: mediumpurple;
+    
+}
+
+.task{
+    background-color: antiquewhite;
+    font-size: 25px;
+    border-bottom: gray 2px solid;
+    height: 40px;
+    width: 300px;
+    display:flex;
+    align-items:flex-start;
+    text-align: center;
+}
+
+.tasklist{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 600px;
+    text-align: center;
+    padding-bottom: 30px;
+}
