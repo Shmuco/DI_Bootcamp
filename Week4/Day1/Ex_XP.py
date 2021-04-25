@@ -41,10 +41,10 @@
 # else:
 #     print("Meh")
 
-# Ex 9
+# # Ex 9
 
-height = input("Please enter you height in Inches: ")
-if (int(height)*2.54) > 145:
-    print("You can ride")
-else:
-    (print("Come back when you've grown some more."))
+# height = input("Please enter you height in Inches: ")
+# if (int(height)*2.54) > 145:
+#     print("You can ride")
+# else:
+#     (print("Come back when you've grown some more."))
