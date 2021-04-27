@@ -20,7 +20,5 @@ elif option==2:
         else:
             cypher_text =cypher_text + chr(ord(letter)- 3)
     cypher_text=cypher_text.replace("7", " ")
-else:
-    option = input("Press 1 to Encrypt or 2 to Decrypt")
     
 print(cypher_text)
