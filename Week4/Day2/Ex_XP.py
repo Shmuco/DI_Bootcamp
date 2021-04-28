@@ -63,7 +63,7 @@
 # print(basket)
 
 
-# #Ex 7
+# #Ex 6
 # #Write a while loop that will continuously ask the user for their name, unless the input is equal to your name.
 
 # my_name = "shmuel"
@@ -72,6 +72,8 @@
 #     user_name=input("Guess again: ")
 
 # print("Well Done!")
+
+# E7
 
 # # Ex 8
 # Create a loop that goes from 1500 to 2500 and prints all multiples of 5 and 7.
@@ -119,6 +121,21 @@
 # print(f'Total: ${total}')
 
 
+names = input("Whats your name?")
+permitted_list =[]
+while names != "done":
+    age= int(input("How old are you? "))
+    if 16<age<21:
+        permitted_list.append(names)
+        names = input("Whats your name? (Type done when finished)")
+    else:
+        names = input("Whats your name? (Type done when finished)")
+        
+print(f'{", ".join(permitted_list)} can enter')
+
+
+
+
 # #Ex 13
 # sandwich_orders=["tuna","jam","chicken"]
 # finished_sandwiches=[]
@@ -127,31 +144,31 @@
 # for sandwich in finished_sandwiches:
 #     print(f'I made your {sandwich} sandwich')
 
-teenagers={}
-allowed=[]
+# teenagers={}
+# allowed=[]
 
-name = input("Enter the name (type finshed if you're done): ")
-while name !="finished":
+# name = input("Enter the name (type finshed if you're done): ")
+# while name !="finished":
     
-    age = input(f'Enter {name}s age: ')
-    teenagers.update({name: age})
-    name = input("Enter the next name: ")
-print(teenagers)
-for teen in teenagers:
-    if 16<int(teenagers['age'])<21:
-        allowed.append(teen)
-print (allowed)
+#     age = input(f'Enter {name}s age: ')
+#     teenagers.update({name: age})
+#     name = input("Enter the next name: ")
+# print(teenagers)
+# for teen in teenagers:
+#     if 16<int(teenagers['age'])<21:
+#         allowed.append(teen)
+# print (allowed)
 
 
 
 
-#Ex 14
-sandwich_orders=["tuna","jam","chicken","pastrami","pastrami","pastrami"]
-finished_sandwiches=[]
-for sandwich in sandwich_orders:
-    finished_sandwiches.append(sandwich)
-for sandwich in finished_sandwiches:
-    print(f'I made your {sandwich} sandwich')
+# #Ex 14
+# sandwich_orders=["tuna","jam","chicken","pastrami","pastrami","pastrami"]
+# finished_sandwiches=[]
+# for sandwich in sandwich_orders:
+#     finished_sandwiches.append(sandwich)
+# for sandwich in finished_sandwiches:
+#     print(f'I made your {sandwich} sandwich')
 
 
 

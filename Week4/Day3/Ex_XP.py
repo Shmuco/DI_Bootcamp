@@ -24,14 +24,14 @@
 #         pass
 # print(total)
 
-# #Bonus
+# # #Bonus
 # names=[]
 # ages=[]
 # dict1={}
 # total= 0
 
-# name = input("Enter the name (type finshed if you're done): ")
-# while name !="finished":
+# name = input("Enter the name (type done if you're done): ")
+# while name !="done":
 
 #     age = input(f'Enter {name}s age: ')
 #     names.append(name)
@@ -40,10 +40,6 @@
 # # print(ages)
 # # print(names)
 
-# keys = ['Ten', 'Twenty', 'Thirty']
-# values = [10, 20, 30]
-# for i,y in zip(names, ages):
-#     dict1[i] = y
 
 # for people in dict1.keys():
 #     if 3<= int(dict1[people]) <=12:
