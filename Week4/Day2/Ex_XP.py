@@ -1,4 +1,4 @@
-# #Ex 1
+# #Ex 1 ✅
 
 # #Create a set called my_fav_numbers with all your favorites numbers.
 # favnumbers ={14,20,30,40}
@@ -19,17 +19,17 @@
 # print(our_fav_numbers)
 
 
-# Ex 2
+# Ex 2 ✅
 # No
 
 
-# # Ex 3
+# # Ex 3 ✅
 # for x in range(21):
 #     if x!=0:
 #         print(x)
 
 
-# # Ex 4
+# # Ex 4 ✅
 # number_list=[]
 # x=1.5
 # index=1
@@ -44,7 +44,7 @@
 #         x=x+0.5
 # print(number_list)
 
-# # Ex 5
+# # Ex 5 ✅
 # basket = ["Banana", "Apples", "Oranges", "Blueberries"];
 # print(basket)
 # # Remove “Banana” from the list.
@@ -63,7 +63,7 @@
 # print(basket)
 
 
-# #Ex 6
+# #Ex 6 ✅
 # #Write a while loop that will continuously ask the user for their name, unless the input is equal to your name.
 
 # my_name = "shmuel"
@@ -73,9 +73,15 @@
 
 # print("Well Done!")
 
-# E7
+# # E7✅
+# basket = ["Banana", "Apples", "Oranges", "Blueberries"];
+# for i in basket:
+#     if basket.index(i) %2==0:
+#         print(i)
 
-# # Ex 8
+
+
+# # Ex 8 ✅
 # Create a loop that goes from 1500 to 2500 and prints all multiples of 5 and 7.
 # for x in range(1500,2500):
 #     if x%7==0:
@@ -83,7 +89,7 @@
 #     elif x%5==0:
 #         print(x)
 
-# # Ex 9
+# # Ex 9 ✅
 # fruits = input("Please input your Favorite fruit: ")
 # fruitlist = fruits.split(" ")
 # newfruit = input("Enter a Fruit: ")
@@ -93,7 +99,7 @@
 # else:
 #     print("You chose a new fruit. I hope you enjoy.")
       
-# # Ex 10
+# # Ex 10 ✅
 # toppings =[]
 # total = 10.00
 # topping = input("Enter a pizza topping: ")
@@ -106,7 +112,7 @@
 #     print(topping)
 # print(f'Total: {total}')
 
-# #Ex11
+# # Ex11 ✅
 # ages =input("Please enter the agees of everyone: ")
 # total = 0
 # ageslist = ages.split(" ")
@@ -120,23 +126,38 @@
 #         pass   
 # print(f'Total: ${total}')
 
-
-names = input("Whats your name?")
-permitted_list =[]
-while names != "done":
-    age= int(input("How old are you? "))
-    if 16<age<21:
-        permitted_list.append(names)
-        names = input("Whats your name? (Type done when finished)")
-    else:
-        names = input("Whats your name? (Type done when finished)")
+# Part 4
+# names = input("Whats your name? ")
+# permitted_list =[]
+# while names != "done":
+#     age= int(input("How old are you? "))
+#     if 16<age<21:
+#         permitted_list.append(names)
+#         names = input("Whats your name? (Type done when finished) ")
+#     else:
+#         names = input("Whats your name? (Type done when finished) ")
         
-print(f'{", ".join(permitted_list)} can enter')
+# print(f'{", ".join(permitted_list)} can enter')
+
+ 
+
+
+# #Ex 12✅
+
+# name_list =["John", "Jake", "James", "Jacob", ]
+# permitted_list =[]
+
+# for name in name_list:
+#     age = int(input(f"{name}, how old are you? "))
+#     if age > 16:
+#         permitted_list.append(name)
+# print(permitted_list)
 
 
 
 
-# #Ex 13
+
+# # Ex 13✅
 # sandwich_orders=["tuna","jam","chicken"]
 # finished_sandwiches=[]
 # for sandwich in sandwich_orders:
@@ -144,25 +165,7 @@ print(f'{", ".join(permitted_list)} can enter')
 # for sandwich in finished_sandwiches:
 #     print(f'I made your {sandwich} sandwich')
 
-# teenagers={}
-# allowed=[]
-
-# name = input("Enter the name (type finshed if you're done): ")
-# while name !="finished":
-    
-#     age = input(f'Enter {name}s age: ')
-#     teenagers.update({name: age})
-#     name = input("Enter the next name: ")
-# print(teenagers)
-# for teen in teenagers:
-#     if 16<int(teenagers['age'])<21:
-#         allowed.append(teen)
-# print (allowed)
-
-
-
-
-# #Ex 14
+# #Ex 14 ✅
 # sandwich_orders=["tuna","jam","chicken","pastrami","pastrami","pastrami"]
 # finished_sandwiches=[]
 # for sandwich in sandwich_orders:
