@@ -14,7 +14,7 @@ game_board ={
 def display_board():
     board = f'''
 
-      TIC TAC TOE
+       TIC TAC TOE
     *****************
     *   {game_board[1]} | {game_board[2]} | {game_board[3]}   *
     *  - -|- -|- -  *
