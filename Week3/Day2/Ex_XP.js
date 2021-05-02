@@ -18,8 +18,9 @@ let h1 = document.getElementsByTagName("h1")[0]
         h1.style.fontSize=`${Math.floor(Math.random() * 101)}px`
     })
 // 4. Add an event listener which will hide the h3 when it’s clicked on (use the display property).
-h2.addEventListener("click", function(){
-    h2.style.display="none"
+let h3 = document.getElementsByTagName("h3")[0]
+h3.addEventListener("click", function(){
+    h3.style.display="none"
 })
 
 
@@ -45,45 +46,46 @@ par2.addEventListener("mouseover", function(){
     
 })
 
+// // Excercise 2
+// function getBold_items() {
+//     bold = document.getElementsByTagName("strong")
+// }
 
-function getBold_items() {
-    bold = document.getElementsByTagName("strong")
-}
-
-function highlight (){
-    getBold_items()
+// function highlight (){
+//     getBold_items()
     
-    for (words of bold)
-    words.style.color="blue";}
+//     for (words of bold)
+//     words.style.color="blue";}
 
-function return_normal(){
-    getBold_items()
-    for (words of bold)
-    words.style.color="black"
-}
+// function return_normal(){
+//     getBold_items()
+//     for (words of bold)
+//     words.style.color="black"
+// }
 
-let p = document.getElementsByTagName("p")[3]
-p.addEventListener("mouseover", highlight)
-p.addEventListener("mouseout", return_normal)
+// let p = document.getElementsByTagName("p")[3]
+// p.addEventListener("mouseover", highlight)
+// p.addEventListener("mouseout", return_normal)
 
 
-let values = { }
-let inputs = document.getElementsByTagName("input");
-for (input of inputs) {
-    input.addEventListener("change", function(e) {
-        values = {
-            ...values,
-            [e.target.name]: e.target.value
-        }
-        console.log(values);
-    })
-}
-let form = document.getElementsByTagName('form')[0];
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    for 
+// // Excercise 3
+// let values = { }
+// let inputs = document.getElementsByTagName("input");
+// for (input of inputs) {
+//     input.addEventListener("change", function(e) {
+//         values = {
+//             ...values,
+//             [e.target.name]: e.target.value
+//         }
+//         console.log(values);
+//     })
+// }
+// let form = document.getElementsByTagName('form')[0];
+// form.addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     for 
     
-})
+// })
 
 // let logout = document.createElement("p")
 // li.innerText = "Log Out"
