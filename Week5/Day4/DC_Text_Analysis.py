@@ -71,4 +71,4 @@ f = open("the_stranger.txt")
 a= Text_Modifications(f.read())
 
 print(a.remove_punc())
-
+print(a.remove_stopwords())
