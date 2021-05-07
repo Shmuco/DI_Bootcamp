@@ -7,7 +7,13 @@ class Game ():
     def get_user_item(self):
         active = True
         while active:
-            user = input("Please select Rock, Paper or scissors: ")
+            user = input("Please select (r)ock, (p)aper or (s)cissors: ")
+            if user == "r":
+                user = "rock"
+            elif user == "p":
+                user = "paper"
+            elif user == "s":
+                user = "scissors"
             if user == 'rock' or user == 'paper' or user == 'scissors':
                 active = False
         return user
@@ -21,7 +27,7 @@ class Game ():
     def get_game_result(self, user, computer):
         if user == computer:
             print(f'You selected {user} and the computer selected {computer}\nYou Drew.')
-            return "Draw"
+            return "draw"
         elif user == "rock" and computer == "scissors":
             print(f'You selected {user} and the computer selected {computer}\nYou Won!')
             return "win"
@@ -40,21 +46,8 @@ class Game ():
         elif user == "paper" and computer == "scissors":
             print(f'You selected {user} and the computer selected {computer}\nYou lost!')
             return "loss"
-
-        else:
-            print(f'user: {user}')
-            print(f'Computer: {computer}')
-
         
 
 
-def play(self):
-    comp_play = self.get_computer_item()
-    user_play = self.get_user_item()
-    result = self.get_game_result(user_play, comp_play)
-    print(result)
-
-game_start = Game("start")
-play(game_start)
 
 
