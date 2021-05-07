@@ -29,8 +29,8 @@ while flag:
                 print("Please try again:")
                 ui = input()
             else:
-                flag = False
                 ui = ui.strip()
+                flag = False
 
 
 
