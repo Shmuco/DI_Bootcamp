@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+
+\f1\b\fs28 Creating first table \
+
+\f0\b0\fs24 \
+create table customers(\
+id serial primary key,\
+first_name VARCHAR (50) NOT NULL,\
+last_name VARCHAR (50) NOT NULL,\
+orders INT\
+)\
+\
+
+\f1\b\fs28 Creating second table 
+\f0\b0 \
+
+\fs24 \
+create table orders(\
+id serial primary key,\
+customer_id int,\
+items int\
+)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b\fs28 \cf0 Creating third table 
+\f0\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \
+create table items(\
+id serial primary key,\
+name varchar (50)\
+)\
+\
+
+\f1\b \
+
+\fs28 Linking table 
+\f0\b0 \
+
+\fs24 \
+ALTER TABLE customers\
+ADD FOREIGN KEY (orders) REFERENCES orders(id);\
+\
+\
+ALTER TABLE orders\
+ADD FOREIGN KEY (customer_id) REFERENCES customers(id)\
+\
+ALTER TABLE orders\
+ADD FOREIGN KEY (items) REFERENCES items(id);\
+\
+\
+
+\f1\b\fs28 Populating tables
+\fs24 \
+
+\f0\b0 \
+insert into items (name) \
+values\
+('hard drive'),('computer'),('bag')\
+\
+insert into customers (first_name, last_name)\
+values ('John', 'Smith'),('Kelly', 'Burke'),('Allen','Gold')\
+\
+insert into orders (customer_id, items) \
+values \
+(4,1),(5,2),(6,3)\
+\
+update customers \
+set orders = 4\
+where id = 4\
+\
+update customers \
+set orders = 5\
+where id = 5\
+\
+update customers \
+set orders = 6\
+where id = 6\
+\
+\
+
+\f1\b\fs28 Joins \
+\
+
+\f0\b0\fs24 select * from customers\
+join orders \
+on customers.orders = orders.id\
+join items \
+on items.id = orders.items\
+\
+\
+select first_name, last_name, name from customers\
+join orders \
+on customers.orders = orders.id\
+left join  items \
+on items.id = orders.items}
