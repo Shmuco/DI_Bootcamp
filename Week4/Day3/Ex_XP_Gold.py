@@ -91,3 +91,58 @@
 #     print(cost)
 #     total += cost
 # print(total)
+
+
+# # Ex 5
+# # 1. Copy the following string into your code: "Volkswagen, Toyota, Ford Motor, Honda, Chevrolet".
+# string = "Volkswagen, Toyota, Ford Motor, Honda, Chevrolet"
+
+# # 2. Convert it into a list using Python (don’t do it by hand!).
+# li = string.split(",")
+
+# # 3. Print out a message saying how many manufacturers/companies are in the list.
+# print(len(li))
+
+# # 4. Print the list of manufacturers in reverse/descending order (Z-A).
+# li.sort(reverse= True)
+# print (li)
+
+# # 5. Using loops or list comprehension:
+# #    - Find out how many manufacturers’ names have the letter ‘o’ in them.
+# counter = 0 
+# for i in li:
+#     if 'o' in i:
+#         counter += 1
+# print(counter)
+
+# #   - Find out how many manufacturers’ names do not have the letter ‘i’ in them.
+# counter = 0 
+# for i in li:
+#     if 'i' in i == False:
+#         counter +=1
+# print(counter)
+
+# # 6. Bonus: There are a few duplicates in this list:["Honda","Volkswagen", "Toyota", "Ford Motor", "Honda", "Chevrolet", "Toyota"]
+# li_2 = ["Honda","Volkswagen", "Toyota", "Ford Motor", "Honda", "Chevrolet", "Toyota"]
+
+# # - Remove these programmatically. (Hint: you can use sets to help you).
+# li_2_set = set(li_2)
+
+# # - Print out the companies without duplicates, in a comma-separated string with no line-breaks (eg. “Acura, Alfa Romeo, Aston Martin, …”), 
+# #   also print out a message saying how many companies are now in the list.
+# # counter = 0
+# print(f'There are {len(li_2)} companies in the list of {",".join(li_2_set)}.')
+
+# # 7. Bonus: Print out the list of manufacturers in ascending order (A-Z), but reverse the letters of each manufacturer’s name.
+# li_2.sort()
+
+# final = []
+# for i in li_2:
+#     word = i[::-1]
+#     word = "".join(word)
+#     final.append(word)
+# print(final)
+
+
+
+
