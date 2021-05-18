@@ -1,0 +1,51 @@
+ D&D Char Sheet
+
+            total players: 4
+                ___player #1___
+                age: 1
+                name 1
+                strength: 18
+                dexterity: 16
+                constitution: 17
+                intelligence: 14
+                widom: 13
+                chrisma: 15
+
+                
+                
+                ___player #2___
+                age: 2
+                name 2
+                strength: 12
+                dexterity: 8
+                constitution: 11
+                intelligence: 10
+                widom: 16
+                chrisma: 12
+
+                
+                
+                ___player #3___
+                age: 3
+                name 3
+                strength: 16
+                dexterity: 10
+                constitution: 8
+                intelligence: 11
+                widom: 10
+                chrisma: 9
+
+                
+                
+                ___player #4___
+                age: 4
+                name 4
+                strength: 17
+                dexterity: 12
+                constitution: 11
+                intelligence: 11
+                widom: 11
+                chrisma: 14
+
+                
+                
