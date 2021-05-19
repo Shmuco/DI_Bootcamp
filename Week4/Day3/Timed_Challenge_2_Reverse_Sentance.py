@@ -5,3 +5,4 @@ sen_li.reverse()
 
 rev_sen =" ".join(sen_li)
 print(rev_sen)
+ 
