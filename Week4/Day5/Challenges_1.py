@@ -88,9 +88,18 @@
 
 # print(list_count(['a','a','t','o'],'a'))
 
-# Ex 8 
+# # Ex 8 
+# import math
+# def norm(list):
+#     sum = 0 
 
-# # # Ex 9
+#     for i in list:
+#         sq = i*i
+#         sum += sq
+#     return math.sqrt(sum)
+# print(norm([1,2,2]))
+
+# # Ex 9
 
 # def is_mono(list):
 #     is_mono = False
@@ -104,3 +113,171 @@
 
 # print(is_mono([2,3,3,3]))
 # print(is_mono([1,2,0,4]))
+
+
+# # Ex 10
+
+# def longets_word(list):
+#     longest = ""
+#     for i in list:
+#         if len(i)>len(longest):
+#             longest = i
+#     return longest
+
+
+# print(longets_word(['hello', 'world', 'hellllllllooooo']))
+
+
+# # Ex 11
+
+# def sort(list):
+#     integers = []
+#     strings = []
+
+#     for i in list:
+#         try:
+#             i.isalpha()
+#             strings.append(i)
+#         except:
+#             integers.append(i)
+        
+#     return integers, strings
+
+# print(sort([0,2,4,"hello","world"]))
+
+
+
+# # Ex 12
+
+# def is_palindrome(x):
+#   y = x[::-1]
+#   if y == x:
+#     return True
+#   else:
+#     return False
+
+
+# print(is_palindrome('radar'))
+# print(is_palindrome('John'))
+
+
+# # Ex 13
+
+# def sum_over_k(sentance,k):
+#     total = 0
+#     sen_li = sentance.split()
+#     print(sen_li)
+#     for i in sen_li:
+#         if len(i)>k:
+#             total+=1
+        
+#     return total
+
+# print(sum_over_k('Do or do not there is no try',2))
+
+# # Ex 14
+
+# def dict_avg(dict):
+#     sum =0
+#     for i in dict:
+#         sum += dict[i]
+#     return sum/len(dict)
+
+# print(dict_avg({'a': 1,'b':2,'c':8,'d': 1}))
+
+
+# # Ex 15
+
+# def common_div(num1,num2):
+#     all_devisors =[]
+#     commons=[]
+#     for i in range(1,num1+1):
+#         if num1%i ==0:
+#             all_devisors.append(i)
+#     for i in range(1,num2+1):
+#         if num2%i ==0:
+#             all_devisors.append(i)
+#     for i in all_devisors:
+#         if all_devisors.count(i)>1:
+#             commons.append(i)
+#     return set(commons)
+
+
+# print(common_div(10,20))
+
+
+# # Ex 16
+
+# def is_prime(num):
+#     divisables = []
+
+#     for i in range(1,num+1):
+#         if num%i ==0:
+#             divisables.append(i)
+#     if len(divisables) ==2:
+#         return True
+#     else: return False
+
+# print(is_prime(25))
+
+
+# # Ex 17
+
+# def weird_print(list):
+#     div_2 = []
+#     for i in list:
+#         if i%2 == 0:
+#             if i not in div_2:
+#                 div_2.append(i)
+#     return div_2
+
+# print(weird_print([1,2,2,3,4,5]))
+
+
+# # Ex 18
+# def type_count(**args):
+#     int_count = 0
+#     str_count = 0
+#     float_count = 0
+#     bool_count = 0
+
+#     for keyword,i in args.items():
+#         if type(i) ==int:
+#             int_count += 1
+#         elif type(i) == float:
+#             float_count += 1
+#         elif type(i) == bool:
+#             bool_count += 1
+#         elif type(i) == str:
+#             str_count += 1
+
+#     return f'int: {int_count}, str: {str_count}, folat: {float_count}, bool: {bool_count}'
+
+# print(type_count(a=1,b='string',c=1.0,d=True,e=False))
+
+# # Ex 19
+
+# def my_split(string, splitter):
+#     words = []
+#     current_indx = 0
+
+#     for i in string:
+#         print(i)
+#         if i == splitter:
+
+#             words.append(string[current_indx:string.index(splitter,current_indx)])
+#             current_indx= string.index(splitter,current_indx)+1
+#         elif string.index(i,current_indx)==len(string)-1:
+#             words.append(string[current_indx:])
+
+#     return words
+
+# print(my_split('hello world how are you?'," "))
+
+# # Ex 20
+
+# def hide_text(text):
+#     return '*'*len(text)
+
+# print(hide_text(input('Enter text: ')))
+
