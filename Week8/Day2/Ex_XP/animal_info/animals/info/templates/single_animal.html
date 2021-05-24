@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+
+{% block content %}
+<h1>Hello from single animal</h1>
+
+<ul>
+    <li>Name: {{ animal.name }}</li>
+    <li>Legs: {{ animal.legs }}</li>
+    <li>Speed: {{ animal.speed }}</li>
+    <li>Family: {{ animal.family }}</li>
+
+    <hr>
+</ul>
+
+{% endblock %}
