@@ -5,5 +5,5 @@ from phonenumber_field.modelfields import PhoneNumberField
 class Person(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=40)
-    phone_number = PhoneNumberField()
-    address = models.TextField(max_length=100)
+    phone_number = PhoneNumberField(blank=True)
+    address = models.CharField(max_length=100)

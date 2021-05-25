@@ -1,12 +1,28 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Person
+from .forms import PersonForm
 
 # Create your views here.
 
-def phone_number(request, phone_number):
-    person = Person.objects.get(id=person_id)
+def person(request, firstname ):
+    person = Person.objects.get(first_name=firstname)
+    print(person)
+    return render(request, 'name.html', {'person': person})
+
+def number(request, phonenumber ):
+    person = Person.objects.get(phone_number=phonenumber)
+    print(person)
     return render(request, 'phonenumber.html', {'person': person})
 
-def phone_number(request, first_name):
-    person = Person.objects.get(id=person_id)
-    return render(request, 'name.html', {'person': person})
+def add_person(request):
+    if request.method == 'GET':
+        return render(request, 'add_person.html', {'form': PersonForm})
+    
+    if request.method == 'POST':
+        data = request.POST
+        form = PersonForm(data)
+        if form.is_valid():
+            person = Person.objects.create(**form.cleaned_data)
+
+            return redirect('person', person.first_name)
+    
