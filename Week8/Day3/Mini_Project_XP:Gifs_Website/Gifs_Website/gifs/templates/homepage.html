@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<title>Gifs</title>
+
+</head>
+<body>
+{% for i in gifs %}
+
+<img src={{ i.url }}>
+
+{% endfor %}
+{% endblock %}

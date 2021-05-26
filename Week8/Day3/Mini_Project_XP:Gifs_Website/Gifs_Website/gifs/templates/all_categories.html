@@ -1,0 +1,16 @@
+{% block content %}
+
+<title>All Categories</title>
+
+</head>
+<body>
+<h1>Categories</h1>
+
+<ul>
+    {% for i in categories %}
+    <li> <a href="{% url 'single_category' i.id %}">{{i.name}}</a>
+    </li>
+   
+    {% endfor %}
+</ul>
+{% endblock %}
