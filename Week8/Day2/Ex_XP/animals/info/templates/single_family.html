@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<ul>
+    {% for i in family %}
+    <li>{{ i.name }}</li>
+    {% endfor %}
+
+</ul>
+{% endblock %}
+

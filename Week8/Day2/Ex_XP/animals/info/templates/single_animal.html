@@ -1,27 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
     <h1>{{ animal.name }}</h1>
     <ul>
         <li>{{ animal.name }}</li>
-        <li>{{ animal.legs }}</li>
-        <li>{{ animal.weight}}</li>
-        <li>{{ animal.height }}</li>
-        <li>{{ animal.speed }}</li>
-        <li>{{ animal.family }}</li>
+        <li>Legs: {{ animal.legs }}</li>
+        <li>Weight: {{ animal.weight}}</li>
+        <li>Height: {{ animal.height }}</li>
+        <li>Speed: {{ animal.speed }}</li>
+        <li>Family: {{ animal.family.name }}</li>
 
     </ul>
-</body>
-</html>
+{% endblock %}
 
-legs
-weight
-height
-speed
-family
+
