@@ -14,5 +14,5 @@ class Gifs(models.Model):
     title = models.CharField(max_length=40)
     url = models.URLField()
     uploader_name = models.CharField(max_length=40)
-    created = models.DateTimeField()
+    created = models.DateTimeField(auto_now_add=True)
     category = models.ManyToManyField(Category, related_name='gif_category')
