@@ -9,4 +9,4 @@ class GifsForm(forms.Form):
     title = forms.CharField(max_length=40)
     url = forms.URLField()
     uploader_name = forms.CharField(max_length=40)
-    category = forms.ModelMultipleChoiceField(queryset = Category.objects.all())
+    category = forms.ModelMultipleChoiceField(**Category.objects.all())
